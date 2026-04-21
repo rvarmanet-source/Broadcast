@@ -1,7 +1,12 @@
+using Broadcast.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Register JSON-based Broadcast Service
+builder.Services.AddScoped<IBroadcastService, JsonBroadcastService>();
 
 var app = builder.Build();
 

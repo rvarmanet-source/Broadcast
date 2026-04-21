@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Title": "Welcome to Broadcast System",
+    "Content": "This is your first broadcast message. You   can create, schedule, and manage messages from here.",
+    "Priority": 2,
+    "Status": 3,
+    "CreatedAt": "2024-01-15T10:30:00Z",
+    "ScheduledFor": null,
+    "SentAt": "2024-01-15T10:30:00Z",
+    "CreatedBy": "System",
+    "Category": "Announcement",
+    "ViewCount": 0,
+    "IsActive": true
+  }
+]
