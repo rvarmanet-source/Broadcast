@@ -5,8 +5,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Configure RabbitMQ
+builder.Services.Configure<RabbitMQConfiguration>(
+    builder.Configuration.GetSection("RabbitMQ"));
+
 // Register JSON-based Broadcast Service
 builder.Services.AddScoped<IBroadcastService, JsonBroadcastService>();
+
+// Register RabbitMQ Message Sender
+builder.Services.AddSingleton<IBroadcastMessageSender, BroadcastMessageSender>();
+
+// Optional: Register RabbitMQ Consumer as Background Service
+// Uncomment the line below to enable automatic message consumption
+// builder.Services.AddHostedService<BroadcastMessageConsumer>();
 
 var app = builder.Build();
 

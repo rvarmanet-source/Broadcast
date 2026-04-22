@@ -1,0 +1,6 @@
+C:\Projects\Broadcast\BroadcastConsumer\obj\Debug\net10.0\BroadcastConsumer.csproj.AssemblyReference.cache
+C:\Projects\Broadcast\BroadcastConsumer\obj\Debug\net10.0\BroadcastConsumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Broadcast\BroadcastConsumer\obj\Debug\net10.0\BroadcastConsumer.AssemblyInfoInputs.cache
+C:\Projects\Broadcast\BroadcastConsumer\obj\Debug\net10.0\BroadcastConsumer.AssemblyInfo.cs
+C:\Projects\Broadcast\BroadcastConsumer\obj\Debug\net10.0\BroadcastConsumer.csproj.CoreCompileInputs.cache
+C:\Projects\Broadcast\BroadcastConsumer\obj\Debug\net10.0\BroadcastConsumer.sourcelink.json

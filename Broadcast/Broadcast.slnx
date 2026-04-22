@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Broadcast/Broadcast.csproj" />
+  <Project Path="BroadCastConsumers/BroadCastConsumers.csproj" Id="85cb6731-e496-4d2d-a610-71b4e8bbf433" />
 </Solution>

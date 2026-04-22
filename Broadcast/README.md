@@ -22,6 +22,7 @@ Broadcast is a modern web application that enables you to create, manage, schedu
 - ⏰ **Message Scheduling** - Send now or schedule for later
 - 👁️ **Analytics** - View count tracking
 - 🎨 **Beautiful UI** - Bootstrap 5 with responsive design
+- 🐰 **RabbitMQ Integration** - Reliable message queuing ⭐ NEW
 - 🚀 **Zero Dependencies** - No SQL Server, No Entity Framework
 - 💾 **JSON Storage** - Portable, human-readable data
 - 🔒 **Secure** - CSRF protection, input validation, HTTPS
@@ -147,7 +148,11 @@ Broadcast/
 │   └── BroadcastMessageViewModel.cs   # Form model
 ├── Services/
 │   ├── IBroadcastService.cs
-│   └── JsonBroadcastService.cs        # JSON storage
+│   ├── JsonBroadcastService.cs        # JSON storage
+│   ├── IBroadcastMessageSender.cs     # RabbitMQ interface ⭐
+│   ├── BroadcastMessageSender.cs      # RabbitMQ publisher ⭐
+│   ├── BroadcastMessageConsumer.cs    # RabbitMQ consumer ⭐
+│   └── RabbitMQConfiguration.cs       # RabbitMQ config ⭐
 ├── Views/
 │   ├── Broadcast/
 │   │   ├── Index.cshtml               # All messages
@@ -164,6 +169,45 @@ Broadcast/
 
 ---
 
+## 🐰 RabbitMQ Integration
+
+### What's New
+
+Messages are now automatically published to **RabbitMQ** when sent, enabling:
+- ✅ Asynchronous message processing
+- ✅ Scalable architecture
+- ✅ Reliable message delivery
+- ✅ Fault tolerance
+- ✅ Easy integration with external services
+
+### Quick Setup
+
+1. **Install RabbitMQ** (Docker - easiest):
+   ```bash
+   docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+   ```
+
+2. **Verify Installation**:
+   - Open: http://localhost:15672
+   - Login: guest / guest
+
+3. **Run Your App** - RabbitMQ integration is automatic!
+
+4. **Test**: Create a message with "Send Immediately"
+
+5. **Monitor**: Check RabbitMQ Management UI
+
+### Documentation
+
+| Document | Description |
+|----------|-------------|
+| **[RABBITMQ-INTEGRATION.md](RABBITMQ-INTEGRATION.md)** | Complete RabbitMQ guide |
+| **[RABBITMQ-QUICKSTART.md](RABBITMQ-QUICKSTART.md)** | Quick reference card |
+
+**[🐰 Read RabbitMQ Integration Guide →](RABBITMQ-INTEGRATION.md)**
+
+---
+
 ## 💻 Technology Stack
 
 ### Backend
@@ -171,6 +215,7 @@ Broadcast/
 - **Language**: C# 13
 - **Pattern**: MVC (Model-View-Controller)
 - **Storage**: JSON Files
+- **Message Queue**: RabbitMQ ⭐
 - **Features**: Async/Await, Dependency Injection, Logging
 
 ### Frontend
@@ -193,6 +238,8 @@ Comprehensive documentation is available:
 | **[ARCHITECTURE.md](ARCHITECTURE.md)** | Technical architecture & diagrams |
 | **[FEATURES.md](FEATURES.md)** | Full feature documentation |
 | **[CHECKLIST.md](CHECKLIST.md)** | Implementation status & roadmap |
+| **[RABBITMQ-INTEGRATION.md](RABBITMQ-INTEGRATION.md)** | RabbitMQ integration guide ⭐ |
+| **[RABBITMQ-QUICKSTART.md](RABBITMQ-QUICKSTART.md)** | RabbitMQ quick reference ⭐ |
 | **[README-INDEX.md](README-INDEX.md)** | Documentation navigation |
 
 **[📖 View complete documentation index →](README-INDEX.md)**

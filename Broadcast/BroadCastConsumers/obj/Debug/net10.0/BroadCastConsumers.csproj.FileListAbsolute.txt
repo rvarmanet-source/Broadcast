@@ -1,0 +1,15 @@
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\BroadCastConsumers.exe
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\BroadCastConsumers.deps.json
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\BroadCastConsumers.runtimeconfig.json
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\BroadCastConsumers.dll
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\BroadCastConsumers.pdb
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.AssemblyInfoInputs.cache
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.AssemblyInfo.cs
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.csproj.CoreCompileInputs.cache
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.sourcelink.json
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.dll
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\refint\BroadCastConsumers.dll
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.pdb
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.genruntimeconfig.cache
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\ref\BroadCastConsumers.dll

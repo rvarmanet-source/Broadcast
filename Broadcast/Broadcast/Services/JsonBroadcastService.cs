@@ -7,11 +7,16 @@ namespace Broadcast.Services
     {
         private readonly string _jsonFilePath;
         private readonly ILogger<JsonBroadcastService> _logger;
+        private readonly IBroadcastMessageSender _messageSender;
         private readonly SemaphoreSlim _fileLock = new(1, 1);
 
-        public JsonBroadcastService(IWebHostEnvironment environment, ILogger<JsonBroadcastService> logger)
+        public JsonBroadcastService(
+            IWebHostEnvironment environment, 
+            ILogger<JsonBroadcastService> logger,
+            IBroadcastMessageSender messageSender)
         {
             _logger = logger;
+            _messageSender = messageSender;
             var dataFolder = Path.Combine(environment.ContentRootPath, "Data");
             Directory.CreateDirectory(dataFolder);
             _jsonFilePath = Path.Combine(dataFolder, "broadcast-messages.json");
@@ -138,6 +143,20 @@ namespace Broadcast.Services
 
             _logger.LogInformation("Broadcast message created: {MessageId} - {Title}", message.Id, message.Title);
 
+            // Send to RabbitMQ if status is Sent
+            if (message.Status == MessageStatus.Sent)
+            {
+                try
+                {
+                    await _messageSender.SendMessageAsync(message);
+                    _logger.LogInformation("Message sent to RabbitMQ: {MessageId}", message.Id);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Failed to send message to RabbitMQ: {MessageId}", message.Id);
+                }
+            }
+
             return message;
         }
 
@@ -168,6 +187,20 @@ namespace Broadcast.Services
             await SaveDataAsync(messages);
 
             _logger.LogInformation("Broadcast message updated: {MessageId}", id);
+
+            // Send to RabbitMQ if status changed to Sent
+            if (model.SendImmediately && message.Status == MessageStatus.Sent)
+            {
+                try
+                {
+                    await _messageSender.SendMessageAsync(message);
+                    _logger.LogInformation("Updated message sent to RabbitMQ: {MessageId}", message.Id);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Failed to send updated message to RabbitMQ: {MessageId}", message.Id);
+                }
+            }
 
             return true;
         }
@@ -202,6 +235,18 @@ namespace Broadcast.Services
             await SaveDataAsync(messages);
 
             _logger.LogInformation("Broadcast message sent: {MessageId}", id);
+
+            // Send to RabbitMQ
+            try
+            {
+                await _messageSender.SendMessageAsync(message);
+                _logger.LogInformation("Message published to RabbitMQ: {MessageId}", message.Id);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to publish message to RabbitMQ: {MessageId}", message.Id);
+                // Note: Message is still marked as sent in local storage
+            }
 
             return true;
         }

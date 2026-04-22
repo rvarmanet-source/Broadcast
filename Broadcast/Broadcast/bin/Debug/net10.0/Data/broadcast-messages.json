@@ -12,5 +12,61 @@
     "Category": "Announcement",
     "ViewCount": 0,
     "IsActive": true
+  },
+  {
+    "Id": 2,
+    "Title": "Test",
+    "Content": "test message",
+    "Priority": 3,
+    "Status": 3,
+    "CreatedAt": "2026-04-21T02:35:34.8626707Z",
+    "ScheduledFor": null,
+    "SentAt": "2026-04-21T02:35:34.8626713Z",
+    "CreatedBy": "Admin",
+    "Category": null,
+    "ViewCount": 0,
+    "IsActive": true
+  },
+  {
+    "Id": 3,
+    "Title": "test message",
+    "Content": "@ 8:47 pm",
+    "Priority": 3,
+    "Status": 3,
+    "CreatedAt": "2026-04-22T01:48:11.2185929Z",
+    "ScheduledFor": null,
+    "SentAt": "2026-04-22T01:48:11.2185935Z",
+    "CreatedBy": "Admin",
+    "Category": null,
+    "ViewCount": 0,
+    "IsActive": true
+  },
+  {
+    "Id": 4,
+    "Title": "testing",
+    "Content": "test @8:51pm",
+    "Priority": 3,
+    "Status": 3,
+    "CreatedAt": "2026-04-22T01:51:42.6603868Z",
+    "ScheduledFor": null,
+    "SentAt": "2026-04-22T01:51:42.660387Z",
+    "CreatedBy": "Admin",
+    "Category": null,
+    "ViewCount": 0,
+    "IsActive": true
+  },
+  {
+    "Id": 5,
+    "Title": "test @8:57pm",
+    "Content": "test",
+    "Priority": 3,
+    "Status": 3,
+    "CreatedAt": "2026-04-22T01:57:21.8027696Z",
+    "ScheduledFor": null,
+    "SentAt": "2026-04-22T01:57:21.8027699Z",
+    "CreatedBy": "Admin",
+    "Category": null,
+    "ViewCount": 0,
+    "IsActive": true
   }
 ]
