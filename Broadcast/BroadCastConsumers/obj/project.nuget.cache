@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "m3HdLqLYKN0=",
+  "dgSpecHash": "Xm0++Q99isA=",
   "success": true,
   "projectFilePath": "C:\\Projects\\Broadcast\\Broadcast\\BroadCastConsumers\\BroadCastConsumers.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rvarm\\.nuget\\packages\\rabbitmq.client\\7.2.1\\rabbitmq.client.7.2.1.nupkg.sha512",
+    "C:\\Users\\rvarm\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

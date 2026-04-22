@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Broadcast\\Broadcast.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BroadCastConsumers\\BroadCastConsumers.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

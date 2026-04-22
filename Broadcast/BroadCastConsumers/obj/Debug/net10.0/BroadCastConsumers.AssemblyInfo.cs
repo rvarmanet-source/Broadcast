@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BroadCastConsumers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d24bfcb7a8818fc8b05d4392adcb17ec42e427a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6addf18757c58f6463ba273447875832c7183261")]
 [assembly: System.Reflection.AssemblyProductAttribute("BroadCastConsumers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BroadCastConsumers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

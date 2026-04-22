@@ -13,3 +13,7 @@ C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\refint\Broa
 C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.pdb
 C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.genruntimeconfig.cache
 C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\ref\BroadCastConsumers.dll
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\bin\Debug\net10.0\System.Threading.RateLimiting.dll
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCastConsumers.csproj.AssemblyReference.cache
+C:\Projects\Broadcast\Broadcast\BroadCastConsumers\obj\Debug\net10.0\BroadCas.B9833AEB.Up2Date
